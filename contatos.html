@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Entre em contato com o Petshop Fofura.">
+    <meta name="keywords" content="contato, petshop, atendimento">
+    <meta name="author" content="Petshop Fofura">
+    <title>Contato - Petshop Fofura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo petshop.png" alt="Logo Petshop Fofura">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="loginButton" onclick="window.location.href=`{{ url_for('login') }}`">Login</button>
+    </header>
+
+    <main>
+        <section id="contato">
+            <h1>Entre em Contato Conosco</h1>
+            <form action="#" method="post" class="contact-form">
+                <label for="nome">Nome:</label>
+                <input type="text" id="nome" name="nome" required>
+                
+                <label for="email">E-mail:</label>
+                <input type="email" id="email" name="email" required>
+                
+                <label for="mensagem">Mensagem:</label>
+                <textarea id="mensagem" name="mensagem" required></textarea>
+                
+                <button type="submit">Enviar</button>
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p class="texto-rodape">Entre em contato: (11) 96203-5008 | professorobama@petshopfofura.com</p>
+        <p class="texto-rodape">&copy; 2025 Petshop Fofura. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>

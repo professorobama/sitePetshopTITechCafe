@@ -1,0 +1,302 @@
+/* Estilos Gerais */
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+    color: #444;
+}
+
+/* Cabeçalho */
+header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background: linear-gradient(135deg, #ffcc80, #ffb74d);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.logo img {
+    height: 80px;
+    padding: 0px;
+}
+
+/* Navegação */
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #5d4037;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #3e2723;
+}
+
+/* Botão */
+button {
+    padding: 10px 20px;
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+button:hover {
+    background-color: #d84315;
+}
+
+/* Layout Principal */
+main {
+    padding: 20px;
+    text-align: center;
+    flex: 1;
+}
+
+/* Seções */
+section {
+    margin-bottom: 20px;
+    padding: 20px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Títulos */
+h1,
+h2 {
+    color: #5d4037;
+    font-size: 29px;
+    font-weight: bold;
+}
+
+/* Texto */
+p {
+    font-size: 18px;
+    color: #5d4037;
+    line-height: 1.4;
+}
+
+/* Lista sem bullets */
+ul {
+    list-style: none;
+    padding: 0;
+}
+
+ul li {
+    font-size: 18px;
+    padding: 5px 0;
+}
+
+/* Galeria */
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 15px;
+}
+
+.gallery img {
+    width: 100%;
+    max-width: 280px;
+    border-radius: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+/* Imagens */
+.service-image {
+    max-width: 300px;
+    margin: 20px auto;
+    display: block;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Rodapé */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #5d4037;
+    color: #fff;
+    border-radius: 0 0 10px 10px;
+    display: block;
+    position: relative;
+}
+
+
+/* Jailson*/
+/* Estilos do Formulário de Contato */
+.contact-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 400px; /* Ajuste a largura conforme necessário */
+    margin: 0 auto; /* Centraliza a seção */
+}
+
+.contact-form label {
+    margin-bottom: 5px;
+    text-align: center; /* Centraliza o texto do label */
+}
+
+.contact-form input, 
+.contact-form textarea {
+    width: 100%; /* Ocupa toda a largura do formulário */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact-form button {
+    width: 100%; /* Ocupa toda a largura do botão */
+    padding: 10px;
+    background-color: #ff7043;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s;
+}
+
+.contact-form button:hover {
+    background-color: #d84315;
+}
+/*Jailson */
+
+.texto-rodape {
+    color: #fff;
+}
+
+/* Responsividade */
+@media (max-width: 1024px) {
+    .gallery {
+        justify-content: center;
+    }
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    nav ul {
+        flex-direction: column;
+        padding-top: 10px;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .gallery img {
+        max-width: 100%;
+    }
+
+    .login-container {
+        width: 90%;
+    }
+}
+
+@media (max-width: 480px) {
+
+    h1,
+    h2 {
+        font-size: 24px;
+    }
+
+    p,
+    ul li {
+        font-size: 16px;
+    }
+
+    button {
+        width: 100%;
+    }
+
+    .gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .gallery img {
+        width: 90%;
+    }
+}
+
+/* Estilos da Página de Login */
+.login-container {
+    max-width: 400px;
+    margin: 50px auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.login-container h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.login-container label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.login-container input {
+    width: 95%;
+    padding: 10px;
+    margin-bottom: 18px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.login-container button {
+    width: 100%;
+    padding: 10px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.login-container button:hover {
+    background-color: #555;
+}
+
+.links {
+    text-align: center;
+    margin-top: 10px;
+}
+
+.links a {
+    color: #333;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.links a:hover {
+    text-decoration: underline;
+}

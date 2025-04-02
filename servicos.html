@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Serviços oferecidos pelo Petshop Fofura.">
+    <meta name="keywords" content="serviços, banho e tosa, veterinário, hotel para pets">
+    <meta name="author" content="Petshop Fofura">
+    <title>Serviços - Petshop Fofura</title>
+    <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="img/logo petshop.png" alt="Logo Petshop Fofura">
+        </div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Sobre Nós</a></li>
+                <li><a href="servicos.html">Serviços</a></li>
+                <li><a href="galeria.html">Galeria</a></li>
+                <li><a href="contatos.html">Contato</a></li>
+            </ul>
+        </nav>
+        <button id="loginButton" onclick="window.location.href=`{{ url_for('login') }}`">Login</button>
+    </header>
+
+    <main>
+        <section id="servicos">
+            <h1>Nossos Serviços</h1>
+            <article>
+                <h2>Banho e Tosa</h2>
+                <p>Oferecemos um serviço completo de banho e tosa, com produtos de alta qualidade para garantir a higiene e o bem-estar do seu pet.</p>
+                <img src="img/banho_tosa.jpg" alt="Banho e Tosa" class="service-image">
+            </article>
+            <article>
+                <h2>Consulta Veterinária</h2>
+                <p>Nossos veterinários estão prontos para atender seu animal com carinho e profissionalismo, realizando consultas e exames.</p>
+                <img src="img/consulta_veterinaria.jpg" alt="Consulta Veterinária" class="service-image">
+            </article>
+            <article>
+                <h2>Hotel para Pets</h2>
+                <p>Seu pet merece um lugar seguro e confortável. Oferecemos um hotel com supervisão 24 horas e atividades recreativas.</p>
+                <img src="img/hotel_pets.jpg" alt="Hotel para Pets" class="service-image">
+            </article>
+            <article>
+                <h2>Produtos de Qualidade</h2>
+                <p>Temos uma variedade de produtos, desde ração até brinquedos, tudo para atender as necessidades do seu melhor amigo.</p>
+                <img src="img/produtos_qualidade.jpg" alt="Produtos de Qualidade" class="service-image">
+            </article>
+        </section>
+    </main>
+
+    <footer>
+        <p class="texto-rodape">Entre em contato: (11) 96203-5008 | professorobama@petshopfofura.com</p>
+        <p class="texto-rodape">&copy; 2025 Petshop Fofura. Todos os direitos reservados.</p>
+    </footer>
+</body>
+
+</html>
